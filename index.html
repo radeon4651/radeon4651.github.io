@@ -1,0 +1,2040 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bruce B. - Personal Portfolio showcasing professional work and engineering expertise">
+    <meta name="author" content="Bruce B.">
+    <meta name="keywords" content="portfolio, web development, projects, professional, skills">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Bruce B. - Personal Portfolio">
+    <meta property="og:description" content="Showcasing Bruce B.'s professional work and technical expertise">
+    <meta property="og:type" content="website">
+    <title>Bruce B. - Personal Portfolio</title>
+    
+    <style>
+        /* CSS Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333;
+            background-color: #fff;
+        }
+        
+        /* Design System Variables */
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #64748b;
+            --accent-color: #0f172a;
+            --background-color: #f8fafc;
+            --text-color: #334155;
+            --space-xs: 8px;
+            --space-sm: 16px;
+            --space-md: 24px;
+            --space-lg: 32px;
+            --transition-fast: 200ms ease-in-out;
+            --transition-medium: 300ms ease-in-out;
+        }
+        
+        /* Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--space-sm);
+        }
+        
+        /* Header and Navigation */
+        header {
+            background-color: var(--background-color);
+            border-bottom: 1px solid #e2e8f0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--space-sm) 0;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: var(--space-md);
+        }
+        
+        .nav-link {
+            color: var(--text-color);
+            text-decoration: none;
+            padding: var(--space-xs) var(--space-sm);
+            border-radius: 6px;
+            transition: all var(--transition-medium);
+            font-weight: 500;
+        }
+        
+        .nav-link:hover,
+        .nav-link:focus {
+            color: var(--primary-color);
+            background-color: rgba(37, 99, 235, 0.1);
+        }
+        
+        /* Main Content */
+        main {
+            min-height: calc(100vh - 80px);
+        }
+        
+        section {
+            padding: var(--space-lg) 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: var(--space-sm);
+            color: var(--accent-color);
+        }
+        
+        h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: var(--space-sm);
+            color: var(--accent-color);
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: var(--space-sm);
+            color: var(--accent-color);
+        }
+        
+        p {
+            margin-bottom: var(--space-sm);
+            color: var(--text-color);
+        }
+        
+        /* Projects Grid */
+        .projects-grid {
+            display: grid;
+            gap: var(--space-md);
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            margin-top: var(--space-lg);
+        }
+        
+        /* Project Cards */
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            padding: var(--space-md);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            transition: all var(--transition-medium);
+            border: 1px solid #e2e8f0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .project-card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+            border-color: var(--primary-color);
+        }
+        
+        /* Project Images and Videos */
+        .project-media-container {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            margin-bottom: var(--space-sm);
+            border-radius: 6px;
+            overflow: hidden;
+            background-color: #f8f9fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .project-image, .project-video {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            object-position: center;
+            transition: transform var(--transition-medium);
+        }
+        
+        .project-card:hover .project-image,
+        .project-card:hover .project-video {
+            transform: scale(1.02);
+        }
+        
+        .project-video {
+            background: #000;
+        }
+        
+        .project-media-placeholder {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--background-color) 0%, #e2e8f0 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: var(--secondary-color);
+            font-size: 1rem;
+            text-align: center;
+            padding: var(--space-sm);
+        }
+        
+        .project-media-placeholder::before {
+            content: '🖼️';
+            font-size: 2rem;
+            display: block;
+            margin-bottom: var(--space-xs);
+        }
+        
+        .project-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--accent-color);
+            margin-bottom: var(--space-xs);
+            line-height: 1.3;
+        }
+        
+        .project-description {
+            color: var(--text-color);
+            line-height: 1.5;
+            margin-bottom: var(--space-sm);
+            flex: 1;
+        }
+        
+        .project-tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-xs);
+            margin-top: var(--space-sm);
+        }
+        
+        .project-tech-tag {
+            background-color: rgba(37, 99, 235, 0.1);
+            color: var(--primary-color);
+            padding: 4px var(--space-xs);
+            border-radius: 4px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            border: 1px solid rgba(37, 99, 235, 0.2);
+        }
+        
+        /* Modal Gallery Styles */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            display: none;
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .modal-overlay.active {
+            display: flex;
+        }
+        
+        .modal-content {
+            position: relative;
+            max-width: 90vw;
+            max-height: 90vh;
+            min-width: 300px;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            width: auto;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .modal-header {
+            padding: 20px;
+            border-bottom: 1px solid #e2e8f0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--background-color);
+        }
+        
+        .modal-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--accent-color);
+            margin: 0;
+        }
+        
+        .modal-close {
+            background: none;
+            border: none;
+            font-size: 2rem;
+            cursor: pointer;
+            color: var(--secondary-color);
+            padding: 0;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: all var(--transition-fast);
+        }
+        
+        .modal-close:hover {
+            background: rgba(0, 0, 0, 0.1);
+            color: var(--accent-color);
+        }
+        
+        .modal-body {
+            padding: 20px;
+            max-height: 80vh;
+            overflow-y: auto;
+            width: auto;
+        }
+        
+        .project-details {
+            margin-bottom: 15px;
+        }
+        
+        .project-full-description {
+            color: var(--text-color);
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        
+        .project-full-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .media-gallery {
+            position: relative;
+        }
+        
+        .media-container {
+            position: relative;
+            width: 100%;
+            height: 220px;
+            background: #000;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            box-sizing: border-box;
+            padding: 8px;
+        }
+        
+        .media-item {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            object-position: center;
+            display: none;
+            box-sizing: border-box;
+        }
+        
+        .media-item.active {
+            display: block;
+        }
+        
+        .media-item.image {
+            object-fit: contain;
+            max-width: 100% !important;
+            max-height: 100% !important;
+        }
+        
+        .media-item.video {
+            object-fit: contain;
+            max-width: 100% !important;
+            max-height: 100% !important;
+        }
+        
+        /* Force absolute containment */
+        .media-container * {
+            max-width: 100% !important;
+            max-height: 100% !important;
+            box-sizing: border-box !important;
+        }
+        
+        /* Adaptive modal media containment */
+        .modal-overlay .media-container {
+            background: #000;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            box-sizing: border-box;
+            padding: 10px;
+            position: relative;
+        }
+        
+        .modal-overlay .media-item {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            object-position: center;
+        }
+        
+        /* Specific video containment */
+        .modal-overlay .media-container video {
+            max-width: calc(100% - 20px) !important;
+            max-height: calc(100% - 20px) !important;
+            width: auto !important;
+            height: auto !important;
+            object-fit: contain !important;
+            object-position: center !important;
+            position: absolute !important;
+            top: 50% !important;
+            left: 50% !important;
+            transform: translate(-50%, -50%) !important;
+        }
+        
+        /* Video Controls Overlay */
+        .video-controls-overlay {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 10;
+            display: flex;
+            gap: 8px;
+            opacity: 0;
+            transition: opacity var(--transition-medium);
+            pointer-events: none;
+        }
+        
+        .media-container:hover .video-controls-overlay,
+        .video-controls-overlay.always-visible,
+        .video-controls-overlay:focus-within {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        
+        .video-control-btn {
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            transition: all var(--transition-fast);
+            backdrop-filter: blur(4px);
+            border: 2px solid transparent;
+        }
+        
+        .video-control-btn:hover {
+            background: rgba(0, 0, 0, 0.9);
+            transform: scale(1.1);
+        }
+        
+        .video-control-btn:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.3);
+        }
+        
+        .video-control-btn:active {
+            transform: scale(0.95);
+        }
+        
+        .video-control-btn.muted {
+            background: rgba(220, 38, 38, 0.8);
+        }
+        
+        .video-control-btn.muted:hover {
+            background: rgba(220, 38, 38, 1);
+        }
+        
+        /* Mute indicator for video thumbnails */
+        .media-thumbnail.video.muted::after {
+            content: '🔇';
+            position: absolute;
+            top: 2px;
+            right: 2px;
+            font-size: 0.8rem;
+            background: rgba(220, 38, 38, 0.9);
+            border-radius: 50%;
+            width: 16px;
+            height: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+        }
+        
+        .media-thumbnail.video:not(.muted)::after {
+            content: '🔊';
+            position: absolute;
+            top: 2px;
+            right: 2px;
+            font-size: 0.8rem;
+            background: rgba(34, 197, 94, 0.9);
+            border-radius: 50%;
+            width: 16px;
+            height: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+        }
+        
+        /* Video play indicator overlay */
+        .media-thumbnail.video::before {
+            content: '▶️';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.2rem;
+            z-index: 1;
+        }
+        
+        /* Keyboard shortcuts help */
+        .keyboard-shortcuts-hint {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            opacity: 0;
+            transition: opacity var(--transition-medium);
+            pointer-events: none;
+            backdrop-filter: blur(4px);
+        }
+        
+        .modal-overlay.active .keyboard-shortcuts-hint {
+            opacity: 1;
+        }
+        
+        /* Specific image containment */
+        .modal-overlay .media-container img {
+            max-width: calc(100% - 20px) !important;
+            max-height: calc(100% - 20px) !important;
+            width: auto !important;
+            height: auto !important;
+            object-fit: contain !important;
+            object-position: center !important;
+            position: absolute !important;
+            top: 50% !important;
+            left: 50% !important;
+            transform: translate(-50%, -50%) !important;
+        }
+
+        
+        .media-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .media-nav-btn {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all var(--transition-fast);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .media-nav-btn:hover {
+            background: #1d4ed8;
+            transform: translateY(-1px);
+        }
+        
+        .media-nav-btn:disabled {
+            background: #9ca3af;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .media-counter {
+            font-size: 0.9rem;
+            color: var(--secondary-color);
+            font-weight: 500;
+        }
+        
+        .media-thumbnails {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            padding: 10px 0;
+        }
+        
+        .media-thumbnail {
+            width: 80px;
+            height: 60px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 4px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: all var(--transition-fast);
+            flex-shrink: 0;
+        }
+        
+        .media-thumbnail:hover {
+            border-color: var(--primary-color);
+            transform: scale(1.05);
+        }
+        
+        .media-thumbnail.active {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+        }
+        
+        .media-thumbnail.video::after {
+            content: '▶️';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.2rem;
+        }
+        
+        .thumbnail-container {
+            position: relative;
+            display: inline-block;
+        }
+        
+        /* About Section Styles */
+        .about-section {
+            background: linear-gradient(135deg, var(--background-color) 0%, #ffffff 100%);
+            border-top: 1px solid #e2e8f0;
+        }
+        
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .about-intro {
+            font-size: 1.25rem;
+            line-height: 1.7;
+            color: var(--text-color);
+            margin-bottom: var(--space-lg);
+            font-weight: 400;
+        }
+        
+        .about-highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-md);
+            margin-top: var(--space-lg);
+        }
+        
+        .about-highlight {
+            background: white;
+            padding: var(--space-md);
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e2e8f0;
+            transition: all var(--transition-medium);
+        }
+        
+        .about-highlight:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+            border-color: var(--primary-color);
+        }
+        
+        .about-highlight-icon {
+            font-size: 2rem;
+            margin-bottom: var(--space-sm);
+            display: block;
+        }
+        
+        .about-highlight h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--accent-color);
+            margin-bottom: var(--space-xs);
+        }
+        
+        .about-highlight p {
+            font-size: 0.95rem;
+            color: var(--secondary-color);
+            margin: 0;
+            line-height: 1.5;
+        }
+        
+        /* Contact Section Styles */
+        .contact-section {
+            background-color: var(--background-color);
+            border-top: 1px solid #e2e8f0;
+        }
+        
+        .contact-content {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .contact-intro {
+            margin-bottom: var(--space-lg);
+        }
+        
+        .contact-intro p {
+            font-size: 1.125rem;
+            color: var(--text-color);
+            margin-bottom: var(--space-md);
+        }
+        
+        .contact-methods {
+            background: white;
+            border-radius: 12px;
+            padding: var(--space-lg);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e2e8f0;
+            transition: all var(--transition-medium);
+        }
+        
+        .contact-methods:hover {
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+            transform: translateY(-2px);
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-sm);
+            padding: var(--space-md);
+            border-radius: 8px;
+            transition: all var(--transition-medium);
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .contact-item:hover {
+            background-color: rgba(37, 99, 235, 0.05);
+            transform: scale(1.02);
+        }
+        
+        .contact-icon {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            background: rgba(37, 99, 235, 0.1);
+            border-radius: 50%;
+            transition: all var(--transition-medium);
+        }
+        
+        .contact-item:hover .contact-icon {
+            background: var(--primary-color);
+            color: white;
+            transform: scale(1.1);
+        }
+        
+        .contact-details {
+            text-align: left;
+        }
+        
+        .contact-label {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--secondary-color);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 2px;
+        }
+        
+        .contact-value {
+            font-size: 1.125rem;
+            font-weight: 500;
+            color: var(--accent-color);
+        }
+        
+        .contact-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: all var(--transition-fast);
+            border-radius: 4px;
+            padding: 2px 4px;
+        }
+        
+        .contact-link:hover,
+        .contact-link:focus {
+            color: #1d4ed8;
+            background-color: rgba(37, 99, 235, 0.1);
+            outline: none;
+        }
+        
+        .contact-link:focus {
+            box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.3);
+        }
+        
+        /* Copy Email Button Styles */
+        .contact-value {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            flex-wrap: wrap;
+        }
+        
+        .email-address {
+            font-size: 1.125rem;
+            font-weight: 500;
+            color: var(--accent-color);
+        }
+        
+        .copy-email-btn {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            min-width: 70px;
+            justify-content: center;
+        }
+        
+        .copy-email-btn:hover {
+            background: #1d4ed8;
+            transform: translateY(-1px);
+            box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);
+        }
+        
+        .copy-email-btn:active {
+            transform: translateY(0);
+            box-shadow: 0 1px 4px rgba(37, 99, 235, 0.3);
+        }
+        
+        .copy-email-btn:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.3);
+        }
+        
+        .copy-email-btn.copied {
+            background: #10b981;
+            animation: copySuccess 0.3s ease-in-out;
+        }
+        
+        .copy-email-btn.copied:hover {
+            background: #059669;
+        }
+        
+        @keyframes copySuccess {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        /* Responsive Design */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .project-media-container {
+                height: 180px;
+            }
+            
+            .media-container {
+                height: 180px;
+            }
+            
+            .modal-overlay .media-container {
+                padding: 15px;
+            }
+            
+            .about-highlights {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-menu {
+                flex-direction: column;
+                gap: var(--space-xs);
+            }
+            
+            .projects-grid {
+                grid-template-columns: 1fr;
+                gap: var(--space-sm);
+            }
+            
+            .project-media-container {
+                height: 160px;
+            }
+            
+            .media-container {
+                height: 150px;
+            }
+            
+            .modal-overlay .media-container {
+                padding: 12px;
+            }
+            
+            .modal-overlay .media-container video,
+            .modal-overlay .media-container img {
+                max-width: calc(100% - 24px) !important;
+                max-height: calc(100% - 24px) !important;
+            }
+            
+            .modal-content {
+                max-width: 95vw;
+                min-width: 280px;
+            }
+            
+            .modal-body {
+                max-height: 75vh;
+                padding: 15px;
+            }
+            
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.75rem; }
+            
+            section {
+                padding: var(--space-md) 0;
+                min-height: auto;
+            }
+            
+            .about-highlights {
+                grid-template-columns: 1fr;
+                gap: var(--space-sm);
+            }
+            
+            .about-intro {
+                font-size: 1.125rem;
+            }
+            
+            .contact-methods {
+                padding: var(--space-md);
+            }
+            
+            .contact-item {
+                flex-direction: column;
+                text-align: center;
+                gap: var(--space-xs);
+            }
+            
+            .contact-details {
+                text-align: center;
+            }
+            
+            .contact-value {
+                flex-direction: column;
+                gap: var(--space-xs);
+            }
+            
+            .copy-email-btn {
+                font-size: 0.8rem;
+                padding: 6px 12px;
+                min-width: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header role="banner">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo" aria-label="Bruce B. Home">Bruce B.</a>
+                <nav role="navigation" aria-label="Main navigation">
+                    <ul class="nav-menu">
+                        <li><a href="#projects" class="nav-link" aria-label="View Projects">Projects</a></li>
+                        <li><a href="#about" class="nav-link" aria-label="About Me">About</a></li>
+                        <li><a href="#contact" class="nav-link" aria-label="Contact Information">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <main id="main-content" role="main">
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section" aria-labelledby="projects-heading">
+            <div class="container">
+                <h1 id="projects-heading">Projects</h1>
+                <p>Showcasing my professional work and technical expertise.</p>
+                
+                <div id="projects-grid" class="projects-grid" role="region" aria-label="Project showcase">
+                    <!-- Projects will be dynamically loaded here -->
+                </div>
+            </div>
+        </section>
+        
+        <!-- About Section -->
+        <section id="about" class="about-section" aria-labelledby="about-heading">
+            <div class="container">
+                <div class="about-content">
+                    <h1 id="about-heading">About Me</h1>
+                    <p class="about-intro">I'm Bruce, a maker and lifelong learner with a passion for the entire creative process, from the first spark of an idea to the finished object in hand. My work lives at the intersection of design, engineering, and hands-on craft. I thrive on turning concepts into CAD files, CAD files into prototypes, and prototypes into real solutions. If it can be imagined, I want to build it.</p>
+                    
+                    <div class="about-highlights">
+                        <div class="about-highlight">
+                            <span class="about-highlight-icon">🔧</span>
+                            <h3>Engineering & Design</h3>
+                            <p>Transforming ideas into precise CAD models and functional prototypes with attention to both form and function.</p>
+                        </div>
+                        <div class="about-highlight">
+                            <span class="about-highlight-icon">🎯</span>
+                            <h3>Problem Solving</h3>
+                            <p>Approaching challenges with creativity and technical expertise to develop innovative, practical solutions.</p>
+                        </div>
+                        <div class="about-highlight">
+                            <span class="about-highlight-icon">🚀</span>
+                            <h3>Continuous Learning</h3>
+                            <p>Always exploring new technologies, techniques, and methodologies to expand my creative toolkit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section" aria-labelledby="contact-heading">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-intro">
+                        <h1 id="contact-heading">Contact</h1>
+                        <p>Get in touch with me for opportunities, collaborations, and interesting projects. I'm always excited to discuss new ideas and potential partnerships.</p>
+                    </div>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-item" aria-label="Email contact information">
+                            <div class="contact-icon" aria-hidden="true">📧</div>
+                            <div class="contact-details">
+                                <div class="contact-label">Email</div>
+                                <div class="contact-value">
+                                    <span class="email-address">brucecreatesthings@gmail.com</span>
+                                    <button class="copy-email-btn" onclick="copyEmail()" aria-label="Copy email address to clipboard">
+                                        <span class="copy-btn-text">Copy</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item" aria-label="Location information">
+                            <div class="contact-icon" aria-hidden="true">📍</div>
+                            <div class="contact-details">
+                                <div class="contact-label">Location</div>
+                                <div class="contact-value">Salt Lake City, Utah</div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item" aria-label="Response time information">
+                            <div class="contact-icon" aria-hidden="true">⏱️</div>
+                            <div class="contact-details">
+                                <div class="contact-label">Response Time</div>
+                                <div class="contact-value">24 hours or less</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Modal Gallery -->
+    <div id="modal-overlay" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title" class="modal-title">Project Title</h2>
+                <button id="modal-close" class="modal-close" aria-label="Close modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="project-details">
+                    <p id="modal-description" class="project-full-description"></p>
+                    <div id="modal-technologies" class="project-full-tech"></div>
+                </div>
+                <div class="media-gallery">
+                    <div class="media-container">
+                        <div id="media-items"></div>
+                    </div>
+                    <div class="media-navigation">
+                        <button id="prev-media" class="media-nav-btn">
+                            ← Previous
+                        </button>
+                        <span id="media-counter" class="media-counter">1 / 1</span>
+                        <button id="next-media" class="media-nav-btn">
+                            Next →
+                        </button>
+                    </div>
+                    <div id="media-thumbnails" class="media-thumbnails"></div>
+                </div>
+                <div class="keyboard-shortcuts-hint">
+                    Press M to mute/unmute • Space to play/pause • ← → to navigate
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        console.log('🚀 Simple portfolio started');
+        
+        // Modal Gallery System
+        const Modal = {
+            overlay: null,
+            currentProject: null,
+            currentMediaIndex: 0,
+            
+            init() {
+                this.overlay = document.getElementById('modal-overlay');
+                this.setupEventListeners();
+            },
+            
+            setupEventListeners() {
+                // Close modal events
+                document.getElementById('modal-close').addEventListener('click', () => this.close());
+                document.getElementById('modal-overlay').addEventListener('click', (e) => {
+                    if (e.target === this.overlay) this.close();
+                });
+                
+                // Keyboard navigation
+                document.addEventListener('keydown', (e) => {
+                    if (!this.overlay.classList.contains('active')) return;
+                    
+                    switch(e.key) {
+                        case 'Escape':
+                            this.close();
+                            break;
+                        case 'ArrowLeft':
+                            this.previousMedia();
+                            break;
+                        case 'ArrowRight':
+                            this.nextMedia();
+                            break;
+                        case 'm':
+                        case 'M':
+                            // Toggle mute/unmute for active video
+                            this.toggleVideoMute();
+                            break;
+                        case ' ':
+                            // Spacebar to play/pause video
+                            e.preventDefault();
+                            this.toggleVideoPlayPause();
+                            break;
+                    }
+                });
+                
+                // Media navigation buttons
+                document.getElementById('prev-media').addEventListener('click', () => this.previousMedia());
+                document.getElementById('next-media').addEventListener('click', () => this.nextMedia());
+                
+                // Window resize handler for modal
+                window.addEventListener('resize', () => {
+                    if (this.overlay.classList.contains('active')) {
+                        const activeMedia = document.querySelector('.media-item.active');
+                        const container = document.querySelector('.media-container');
+                        if (activeMedia && container) {
+                            setTimeout(() => {
+                                this.adjustContainerSize(activeMedia, container);
+                            }, 100);
+                        }
+                    }
+                });
+            },
+            
+            open(project) {
+                this.currentProject = project;
+                this.currentMediaIndex = 0;
+                
+                // Set project details
+                document.getElementById('modal-title').textContent = project.title;
+                document.getElementById('modal-description').textContent = project.description;
+                
+                // Set technologies
+                const techContainer = document.getElementById('modal-technologies');
+                techContainer.innerHTML = project.technologies.map(tech => 
+                    `<span class="project-tech-tag">${tech}</span>`
+                ).join('');
+                
+                // Setup media gallery
+                this.setupMediaGallery();
+                
+                // Show modal
+                this.overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+                
+                // Adjust modal size after a brief delay to ensure content is rendered
+                setTimeout(() => {
+                    const activeMedia = document.querySelector('.media-item.active');
+                    const container = document.querySelector('.media-container');
+                    if (activeMedia && container) {
+                        this.adjustContainerSize(activeMedia, container);
+                        
+                        // Initialize video controls if the first media is a video
+                        if (activeMedia.tagName === 'VIDEO') {
+                            this.updateVideoControlsUI(activeMedia);
+                            this.updateThumbnailMuteIndicator(activeMedia);
+                        }
+                    }
+                }, 100);
+            },
+            
+            close() {
+                this.overlay.classList.remove('active');
+                document.body.style.overflow = '';
+                
+                // Pause any playing videos
+                const videos = this.overlay.querySelectorAll('video');
+                videos.forEach(video => video.pause());
+            },
+            
+            setupMediaGallery() {
+                const mediaItems = document.getElementById('media-items');
+                const thumbnails = document.getElementById('media-thumbnails');
+                
+                mediaItems.innerHTML = '';
+                thumbnails.innerHTML = '';
+                
+                if (!this.currentProject.images || this.currentProject.images.length === 0) {
+                    mediaItems.innerHTML = '<div class="project-media-placeholder"><div>No media available</div></div>';
+                    return;
+                }
+                
+                // Create media items
+                this.currentProject.images.forEach((media, index) => {
+                    // Create main media item
+                    let mediaElement;
+                    if (media.type === 'video' || media.url.match(/\.(mp4|mov|avi|webm)$/i)) {
+                        mediaElement = document.createElement('video');
+                        mediaElement.src = media.url;
+                        mediaElement.controls = true;
+                        mediaElement.preload = 'metadata';
+                        // Ensure audio is enabled by default (no muted attribute)
+                        mediaElement.muted = false;
+                        mediaElement.className = 'media-item video';
+                        
+                        // Add load event to adjust container height based on video
+                        mediaElement.addEventListener('loadedmetadata', () => {
+                            const container = document.querySelector('.media-container');
+                            if (container && mediaElement.classList.contains('active')) {
+                                this.adjustContainerSize(mediaElement, container);
+                            }
+                        });
+                        
+                        mediaElement.addEventListener('error', () => {
+                            console.warn('Video failed to load:', media.url);
+                        });
+                        
+                        // Pause other videos when this one plays
+                        mediaElement.addEventListener('play', () => {
+                            const otherVideos = mediaItems.querySelectorAll('video');
+                            otherVideos.forEach(video => {
+                                if (video !== mediaElement) {
+                                    video.pause();
+                                }
+                            });
+                        });
+                    } else {
+                        mediaElement = document.createElement('img');
+                        mediaElement.src = media.url;
+                        mediaElement.alt = media.alt || `${this.currentProject.title} image ${index + 1}`;
+                        mediaElement.className = 'media-item image';
+                        
+                        // Add load event to adjust container height based on image
+                        mediaElement.addEventListener('load', () => {
+                            const container = document.querySelector('.media-container');
+                            if (container && mediaElement.classList.contains('active')) {
+                                this.adjustContainerSize(mediaElement, container);
+                            }
+                        });
+                        
+                        mediaElement.addEventListener('error', () => {
+                            console.warn('Image failed to load:', media.url);
+                        });
+                    }
+                    
+                    if (index === 0) mediaElement.classList.add('active');
+                    mediaItems.appendChild(mediaElement);
+                    
+                    // Create video controls overlay for videos
+                    if (media.type === 'video' || media.url.match(/\.(mp4|mov|avi|webm)$/i)) {
+                        const controlsOverlay = document.createElement('div');
+                        controlsOverlay.className = 'video-controls-overlay';
+                        controlsOverlay.innerHTML = `
+                            <button class="video-control-btn mute-btn" title="Toggle Mute (M)" aria-label="Toggle video mute">
+                                🔊
+                            </button>
+                        `;
+                        
+                        // Add mute button event listener
+                        const muteBtn = controlsOverlay.querySelector('.mute-btn');
+                        muteBtn.addEventListener('click', (e) => {
+                            e.stopPropagation();
+                            this.toggleVideoMute(mediaElement);
+                        });
+                        
+                        // Add controls overlay to media container when this media is active
+                        if (index === 0) {
+                            const container = document.querySelector('.media-container');
+                            if (container) {
+                                container.appendChild(controlsOverlay);
+                            }
+                        }
+                        
+                        // Store reference to controls for later use
+                        mediaElement.controlsOverlay = controlsOverlay;
+                    }
+                    
+                    // Create thumbnail
+                    const thumbnailContainer = document.createElement('div');
+                    thumbnailContainer.className = 'thumbnail-container';
+                    
+                    let thumbnail;
+                    if (media.type === 'video' || media.url.match(/\.(mp4|mov|avi|webm)$/i)) {
+                        thumbnail = document.createElement('video');
+                        thumbnail.src = media.url;
+                        thumbnail.preload = 'metadata';
+                        thumbnail.muted = true; // Thumbnails should be muted
+                        thumbnail.className = 'media-thumbnail video';
+                        
+                        // Set a specific time for video thumbnail (2 seconds in)
+                        thumbnail.addEventListener('loadedmetadata', () => {
+                            thumbnail.currentTime = Math.min(2, thumbnail.duration * 0.1);
+                        });
+                    } else {
+                        thumbnail = document.createElement('img');
+                        thumbnail.src = media.url;
+                        thumbnail.alt = `Thumbnail ${index + 1}`;
+                        thumbnail.className = 'media-thumbnail';
+                    }
+                    
+                    if (index === 0) thumbnail.classList.add('active');
+                    
+                    thumbnail.addEventListener('click', () => this.showMedia(index));
+                    thumbnailContainer.appendChild(thumbnail);
+                    thumbnails.appendChild(thumbnailContainer);
+                });
+                
+                this.updateMediaNavigation();
+            },
+            
+            showMedia(index) {
+                if (index < 0 || index >= this.currentProject.images.length) return;
+                
+                // Hide current media
+                const currentMedia = document.querySelector('.media-item.active');
+                if (currentMedia) {
+                    currentMedia.classList.remove('active');
+                    if (currentMedia.tagName === 'VIDEO') currentMedia.pause();
+                }
+                
+                // Remove existing video controls overlay
+                const existingControls = document.querySelector('.video-controls-overlay');
+                if (existingControls) {
+                    existingControls.remove();
+                }
+                
+                // Show new media
+                const newMedia = document.querySelectorAll('.media-item')[index];
+                if (newMedia) {
+                    newMedia.classList.add('active');
+                    
+                    // Add video controls overlay if this is a video
+                    if (newMedia.tagName === 'VIDEO' && newMedia.controlsOverlay) {
+                        const container = document.querySelector('.media-container');
+                        if (container) {
+                            container.appendChild(newMedia.controlsOverlay);
+                            this.updateVideoControlsUI(newMedia);
+                        }
+                    }
+                    
+                    // Adjust container size for the new media
+                    const container = document.querySelector('.media-container');
+                    if (container) {
+                        setTimeout(() => {
+                            this.adjustContainerSize(newMedia, container);
+                        }, 50);
+                    }
+                }
+                
+                // Update thumbnails
+                document.querySelectorAll('.media-thumbnail').forEach((thumb, i) => {
+                    thumb.classList.toggle('active', i === index);
+                    
+                    // Update mute indicator for video thumbnails
+                    if (thumb.classList.contains('video')) {
+                        const correspondingVideo = document.querySelectorAll('.media-item')[i];
+                        if (correspondingVideo && correspondingVideo.tagName === 'VIDEO') {
+                            thumb.classList.toggle('muted', correspondingVideo.muted);
+                        }
+                    }
+                });
+                
+                this.currentMediaIndex = index;
+                this.updateMediaNavigation();
+            },
+            
+            previousMedia() {
+                this.showMedia(this.currentMediaIndex - 1);
+            },
+            
+            nextMedia() {
+                this.showMedia(this.currentMediaIndex + 1);
+            },
+            
+            updateMediaNavigation() {
+                const totalMedia = this.currentProject.images ? this.currentProject.images.length : 0;
+                
+                document.getElementById('media-counter').textContent = 
+                    `${this.currentMediaIndex + 1} / ${totalMedia}`;
+                
+                document.getElementById('prev-media').disabled = this.currentMediaIndex === 0;
+                document.getElementById('next-media').disabled = this.currentMediaIndex === totalMedia - 1;
+            },
+            
+            toggleVideoMute(videoElement = null) {
+                const activeVideo = videoElement || document.querySelector('.media-item.active video');
+                if (!activeVideo || activeVideo.tagName !== 'VIDEO') {
+                    console.log('No active video found for mute toggle');
+                    return;
+                }
+                
+                activeVideo.muted = !activeVideo.muted;
+                this.updateVideoControlsUI(activeVideo);
+                this.updateThumbnailMuteIndicator(activeVideo);
+                
+                console.log(`Video ${activeVideo.muted ? 'muted' : 'unmuted'} - Source: ${activeVideo.src}`);
+            },
+            
+            toggleVideoPlayPause() {
+                const activeVideo = document.querySelector('.media-item.active video');
+                if (!activeVideo || activeVideo.tagName !== 'VIDEO') return;
+                
+                if (activeVideo.paused) {
+                    activeVideo.play();
+                } else {
+                    activeVideo.pause();
+                }
+            },
+            
+            updateVideoControlsUI(videoElement) {
+                const muteBtn = document.querySelector('.video-controls-overlay .mute-btn');
+                if (!muteBtn) return;
+                
+                if (videoElement.muted) {
+                    muteBtn.textContent = '🔇';
+                    muteBtn.classList.add('muted');
+                    muteBtn.title = 'Unmute (M)';
+                    muteBtn.setAttribute('aria-label', 'Unmute video');
+                } else {
+                    muteBtn.textContent = '🔊';
+                    muteBtn.classList.remove('muted');
+                    muteBtn.title = 'Mute (M)';
+                    muteBtn.setAttribute('aria-label', 'Mute video');
+                }
+            },
+            
+            updateThumbnailMuteIndicator(videoElement) {
+                // Find the corresponding thumbnail and update its mute indicator
+                const mediaItems = document.querySelectorAll('.media-item');
+                const videoIndex = Array.from(mediaItems).indexOf(videoElement);
+                
+                if (videoIndex >= 0) {
+                    const thumbnails = document.querySelectorAll('.media-thumbnail');
+                    const correspondingThumbnail = thumbnails[videoIndex];
+                    
+                    if (correspondingThumbnail && correspondingThumbnail.classList.contains('video')) {
+                        correspondingThumbnail.classList.toggle('muted', videoElement.muted);
+                    }
+                }
+            },
+            
+            adjustContainerSize(mediaElement, container) {
+                // Get image dimensions and calculate optimal modal size
+                let naturalWidth = 0;
+                let naturalHeight = 0;
+                
+                if (mediaElement.tagName === 'IMG') {
+                    naturalWidth = mediaElement.naturalWidth;
+                    naturalHeight = mediaElement.naturalHeight;
+                } else if (mediaElement.tagName === 'VIDEO') {
+                    naturalWidth = mediaElement.videoWidth;
+                    naturalHeight = mediaElement.videoHeight;
+                }
+                
+                if (naturalWidth && naturalHeight) {
+                    this.resizeModalToImage(naturalWidth, naturalHeight);
+                } else {
+                    // Fallback to default size
+                    this.resizeModalToImage(800, 600);
+                }
+                
+                console.log(`Resizing modal for ${naturalWidth}x${naturalHeight} image`);
+            },
+            
+            resizeModalToImage(imageWidth, imageHeight) {
+                const modalContent = document.querySelector('.modal-content');
+                if (!modalContent) return;
+                
+                // Calculate aspect ratio
+                const aspectRatio = imageWidth / imageHeight;
+                
+                // Get screen dimensions
+                const screenWidth = window.innerWidth;
+                const screenHeight = window.innerHeight;
+                
+                // Calculate optimal dimensions
+                const isMobile = screenWidth <= 768;
+                const maxModalWidth = isMobile ? screenWidth * 0.95 : screenWidth * 0.8;
+                const maxModalHeight = screenHeight * 0.85;
+                
+                // Account for modal padding and other content (header, description, controls)
+                const contentPadding = 40; // Modal padding
+                const headerHeight = 80; // Approximate header height
+                const descriptionHeight = isMobile ? 120 : 100; // Description and tech tags
+                const controlsHeight = 80; // Navigation controls
+                const availableHeight = maxModalHeight - headerHeight - descriptionHeight - controlsHeight;
+                
+                // Calculate container dimensions based on image aspect ratio
+                let containerWidth = Math.min(maxModalWidth - contentPadding, 600);
+                let containerHeight = containerWidth / aspectRatio;
+                
+                // Ensure container height fits within available space
+                if (containerHeight > availableHeight) {
+                    containerHeight = availableHeight;
+                    containerWidth = containerHeight * aspectRatio;
+                }
+                
+                // Apply minimum constraints
+                const minWidth = isMobile ? 280 : 400;
+                const minHeight = isMobile ? 200 : 250;
+                
+                containerWidth = Math.max(containerWidth, minWidth);
+                containerHeight = Math.max(containerHeight, minHeight);
+                
+                // Update modal and container sizes
+                modalContent.style.width = `${containerWidth + contentPadding}px`;
+                
+                const mediaContainer = document.querySelector('.media-container');
+                if (mediaContainer) {
+                    mediaContainer.style.width = `${containerWidth}px`;
+                    mediaContainer.style.height = `${containerHeight}px`;
+                    mediaContainer.style.maxWidth = `${containerWidth}px`;
+                    mediaContainer.style.maxHeight = `${containerHeight}px`;
+                    mediaContainer.style.overflow = 'hidden';
+                    mediaContainer.style.position = 'relative';
+                    
+                    // Ensure all media items are properly constrained
+                    const mediaItems = mediaContainer.querySelectorAll('img, video');
+                    mediaItems.forEach(item => {
+                        item.style.maxWidth = 'calc(100% - 20px)';
+                        item.style.maxHeight = 'calc(100% - 20px)';
+                        item.style.position = 'absolute';
+                        item.style.top = '50%';
+                        item.style.left = '50%';
+                        item.style.transform = 'translate(-50%, -50%)';
+                        item.style.objectFit = 'contain';
+                    });
+                }
+                
+                console.log(`Modal resized to: ${containerWidth + contentPadding}px wide, container: ${containerWidth}x${containerHeight}px`);
+            },
+            
+            adjustModalSize(aspectRatio, containerHeight) {
+                // This method is now handled by resizeModalToImage
+                // Keep for compatibility but delegate to the new method
+                this.resizeModalToImage(800 * aspectRatio, 800);
+            }
+        };
+        
+        const Projects = {
+            allProjects: [],
+            showingAll: false,
+            priorityOrder: [
+                'Paint Mixer and Maker',
+                'Glow Canister for Shortfilm ',
+                'Sally from COD Zombies PAP Replica',
+                'Lilith the Portable AI Companion',
+                'CAD Designed and 3D Printed Guitar',
+                'Cup of Noodles Holder'
+            ],
+            
+            async init() {
+                console.log('🚀 Projects.init() called');
+                await this.loadProjects();
+            },
+            
+            async loadProjects() {
+                console.log('🔍 Loading projects...');
+                
+                try {
+                    const response = await fetch('./projects.json?v=' + Date.now());
+                    console.log('📄 Response:', response.status, response.statusText);
+                    
+                    if (response.ok) {
+                        const data = await response.json();
+                        console.log(`✅ Loaded ${data.projects.length} projects`);
+                        this.allProjects = this.reorderProjects(data.projects);
+                        this.renderProjects(this.getProjectsToShow());
+                        this.addShowMoreButton();
+                    } else {
+                        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                    }
+                } catch (error) {
+                    console.error('❌ Error:', error);
+                }
+            },
+            
+            reorderProjects(projects) {
+                console.log('🔄 Reordering projects...');
+                const reordered = [];
+                const remaining = [...projects];
+                
+                // Add priority projects first in the specified order
+                this.priorityOrder.forEach(priorityTitle => {
+                    const projectIndex = remaining.findIndex(p => p.title === priorityTitle);
+                    if (projectIndex !== -1) {
+                        reordered.push(remaining.splice(projectIndex, 1)[0]);
+                        console.log(`✅ Added priority project: ${priorityTitle}`);
+                    } else {
+                        console.warn(`⚠️ Priority project not found: ${priorityTitle}`);
+                    }
+                });
+                
+                // Add remaining projects
+                reordered.push(...remaining);
+                
+                console.log(`🔄 Reordered ${reordered.length} projects with ${this.priorityOrder.length} priority projects at top`);
+                return reordered;
+            },
+            
+            getProjectsToShow() {
+                if (this.showingAll) {
+                    return this.allProjects;
+                } else {
+                    return this.allProjects.slice(0, 6);
+                }
+            },
+            
+            addShowMoreButton() {
+                const grid = document.getElementById('projects-grid');
+                if (!grid) return;
+                
+                // Remove existing button if it exists
+                const existingButton = document.getElementById('show-more-projects-btn');
+                if (existingButton) {
+                    existingButton.remove();
+                }
+                
+                // Only add button if there are more than 6 projects
+                if (this.allProjects.length <= 6) return;
+                
+                const buttonContainer = document.createElement('div');
+                buttonContainer.style.cssText = `
+                    grid-column: 1 / -1;
+                    display: flex;
+                    justify-content: center;
+                    margin-top: var(--space-lg);
+                `;
+                
+                const button = document.createElement('button');
+                button.id = 'show-more-projects-btn';
+                button.className = 'show-more-btn';
+                button.textContent = this.showingAll ? 'Show Less Projects' : 'Show More Projects';
+                button.style.cssText = `
+                    background: var(--primary-color);
+                    color: white;
+                    border: none;
+                    padding: var(--space-sm) var(--space-lg);
+                    border-radius: 8px;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    cursor: pointer;
+                    transition: all var(--transition-medium);
+                    box-shadow: 0 2px 4px rgba(37, 99, 235, 0.2);
+                `;
+                
+                // Add hover effects
+                button.addEventListener('mouseenter', () => {
+                    button.style.background = '#1d4ed8';
+                    button.style.transform = 'translateY(-2px)';
+                    button.style.boxShadow = '0 4px 12px rgba(37, 99, 235, 0.3)';
+                });
+                
+                button.addEventListener('mouseleave', () => {
+                    button.style.background = 'var(--primary-color)';
+                    button.style.transform = 'translateY(0)';
+                    button.style.boxShadow = '0 2px 4px rgba(37, 99, 235, 0.2)';
+                });
+                
+                button.addEventListener('click', () => {
+                    this.toggleShowMore();
+                });
+                
+                buttonContainer.appendChild(button);
+                grid.appendChild(buttonContainer);
+            },
+            
+            toggleShowMore() {
+                this.showingAll = !this.showingAll;
+                console.log(`🔄 Toggling projects view: ${this.showingAll ? 'showing all' : 'showing first 6'}`);
+                
+                const grid = document.getElementById('projects-grid');
+                if (!grid) return;
+                
+                // Get current projects to show
+                const projectsToShow = this.getProjectsToShow();
+                
+                if (this.showingAll) {
+                    // Expanding: add new projects with animation
+                    const newProjects = this.allProjects.slice(6);
+                    this.renderNewProjects(newProjects);
+                } else {
+                    // Collapsing: remove projects beyond first 6 with animation
+                    this.removeExtraProjects();
+                }
+                
+                // Update button text
+                const button = document.getElementById('show-more-projects-btn');
+                if (button) {
+                    button.textContent = this.showingAll ? 'Show Less Projects' : 'Show More Projects';
+                }
+                
+                // Smooth scroll to projects section if collapsing
+                if (!this.showingAll) {
+                    setTimeout(() => {
+                        document.getElementById('projects').scrollIntoView({ 
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }, 300);
+                }
+            },
+            
+            renderNewProjects(newProjects) {
+                const grid = document.getElementById('projects-grid');
+                const button = document.getElementById('show-more-projects-btn');
+                
+                newProjects.forEach((project, index) => {
+                    const card = this.createProjectCard(project);
+                    
+                    // Add initial hidden state for animation
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateY(20px)';
+                    card.style.transition = 'all 0.3s ease-in-out';
+                    
+                    // Insert before the button
+                    grid.insertBefore(card, button.parentElement);
+                    
+                    // Trigger animation after a brief delay
+                    setTimeout(() => {
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }, index * 100 + 50);
+                });
+            },
+            
+            removeExtraProjects() {
+                const grid = document.getElementById('projects-grid');
+                const allCards = grid.querySelectorAll('.project-card');
+                
+                // Remove cards beyond the first 6 with animation
+                for (let i = 6; i < allCards.length; i++) {
+                    const card = allCards[i];
+                    card.style.transition = 'all 0.3s ease-in-out';
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateY(-20px)';
+                    
+                    setTimeout(() => {
+                        if (card.parentElement) {
+                            card.remove();
+                        }
+                    }, 300);
+                }
+            },
+            
+            createProjectCard(project) {
+                const card = document.createElement('div');
+                card.className = 'project-card';
+                card.style.cursor = 'pointer';
+                card.setAttribute('tabindex', '0');
+                card.setAttribute('role', 'button');
+                card.setAttribute('aria-label', `View details for ${project.title}`);
+                
+                // Create media container
+                const mediaContainer = document.createElement('div');
+                mediaContainer.className = 'project-media-container';
+                
+                // Get the first image or video
+                let mediaElement = null;
+                if (project.images && project.images.length > 0) {
+                    const firstMedia = project.images[0];
+                    
+                    if (firstMedia.type === 'video' || firstMedia.url.match(/\.(mp4|mov|avi|webm)$/i)) {
+                        // Create video element with audio enabled
+                        mediaElement = document.createElement('video');
+                        mediaElement.src = firstMedia.url;
+                        mediaElement.className = 'project-video';
+                        mediaElement.setAttribute('preload', 'metadata');
+                        mediaElement.setAttribute('controls', 'true');
+                        // Ensure audio is enabled (no muted attribute)
+                        mediaElement.muted = false;
+                        
+                        mediaElement.addEventListener('error', () => {
+                            console.warn('Video failed to load:', firstMedia.url);
+                            this.showMediaPlaceholder(mediaContainer, 'Video not available');
+                        });
+                    } else {
+                        // Create image element
+                        mediaElement = document.createElement('img');
+                        mediaElement.src = firstMedia.url;
+                        mediaElement.alt = firstMedia.alt || `Screenshot of ${project.title}`;
+                        mediaElement.className = 'project-image';
+                        mediaElement.loading = 'lazy';
+                        
+                        mediaElement.addEventListener('error', () => {
+                            console.warn('Image failed to load:', firstMedia.url);
+                            this.showMediaPlaceholder(mediaContainer, 'Image not available');
+                        });
+                    }
+                    
+                    mediaContainer.appendChild(mediaElement);
+                    
+                    // Add media count indicator if multiple media items
+                    if (project.images.length > 1) {
+                        const mediaCount = document.createElement('div');
+                        mediaCount.style.cssText = `
+                            position: absolute;
+                            top: 8px;
+                            right: 8px;
+                            background: rgba(0, 0, 0, 0.7);
+                            color: white;
+                            padding: 4px 8px;
+                            border-radius: 12px;
+                            font-size: 0.8rem;
+                            font-weight: 500;
+                        `;
+                        mediaCount.textContent = `${project.images.length} items`;
+                        mediaContainer.appendChild(mediaCount);
+                    }
+                } else {
+                    // No media available, show placeholder
+                    this.showMediaPlaceholder(mediaContainer, 'No media available');
+                }
+                
+                // Create card content
+                const cardContent = document.createElement('div');
+                cardContent.innerHTML = `
+                    <h3 class="project-title">${project.title}</h3>
+                    <p class="project-description">${project.description}</p>
+                    <div class="project-tech-list">
+                        ${project.technologies.map(tech => `<span class="project-tech-tag">${tech}</span>`).join('')}
+                    </div>
+                `;
+                
+                // Assemble the card
+                card.appendChild(mediaContainer);
+                card.appendChild(cardContent);
+                
+                // Add click event to open modal
+                const openModal = () => Modal.open(project);
+                card.addEventListener('click', openModal);
+                card.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        openModal();
+                    }
+                });
+                
+                return card;
+            },
+            
+            
+            renderProjects(projects) {
+                console.log(`🎨 Rendering ${projects.length} projects`);
+                const grid = document.getElementById('projects-grid');
+                
+                if (!grid) {
+                    console.error('❌ Projects grid not found');
+                    return;
+                }
+                
+                // Clear existing content (but preserve show more button if it exists)
+                const existingButton = document.getElementById('show-more-projects-btn');
+                const buttonParent = existingButton ? existingButton.parentElement : null;
+                
+                grid.innerHTML = '';
+                
+                // Render projects
+                projects.forEach((project, index) => {
+                    console.log(`🔨 Rendering project ${index + 1}: ${project.title}`);
+                    const card = this.createProjectCard(project);
+                    grid.appendChild(card);
+                });
+                
+                // Re-add button if it existed
+                if (buttonParent) {
+                    grid.appendChild(buttonParent);
+                }
+                
+                console.log(`✅ Completed rendering ${projects.length} projects with media`);
+            },
+            
+            showMediaPlaceholder(container, message) {
+                container.innerHTML = `
+                    <div class="project-media-placeholder">
+                        <div>${message}</div>
+                    </div>
+                `;
+            }
+        };
+        
+        // Simple navigation
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = document.querySelector(link.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+        
+        // Initialize when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', () => {
+                console.log('📄 DOMContentLoaded fired');
+                Modal.init();
+                Projects.init();
+            });
+        } else {
+            console.log('📄 Document already loaded');
+            Modal.init();
+            Projects.init();
+        }
+        
+        // Copy Email Functionality
+        function copyEmail() {
+            const email = 'brucecreatesthings@gmail.com';
+            const button = document.querySelector('.copy-email-btn');
+            const buttonText = button.querySelector('.copy-btn-text');
+            
+            // Try to copy to clipboard
+            if (navigator.clipboard && window.isSecureContext) {
+                // Modern clipboard API
+                navigator.clipboard.writeText(email).then(() => {
+                    showCopySuccess(button, buttonText);
+                }).catch((err) => {
+                    console.error('Failed to copy email:', err);
+                    fallbackCopyEmail(email, button, buttonText);
+                });
+            } else {
+                // Fallback for older browsers or non-secure contexts
+                fallbackCopyEmail(email, button, buttonText);
+            }
+        }
+        
+        function fallbackCopyEmail(email, button, buttonText) {
+            // Create a temporary textarea element
+            const textArea = document.createElement('textarea');
+            textArea.value = email;
+            textArea.style.position = 'fixed';
+            textArea.style.left = '-999999px';
+            textArea.style.top = '-999999px';
+            document.body.appendChild(textArea);
+            
+            try {
+                textArea.focus();
+                textArea.select();
+                const successful = document.execCommand('copy');
+                if (successful) {
+                    showCopySuccess(button, buttonText);
+                } else {
+                    showCopyError(button, buttonText);
+                }
+            } catch (err) {
+                console.error('Fallback copy failed:', err);
+                showCopyError(button, buttonText);
+            } finally {
+                document.body.removeChild(textArea);
+            }
+        }
+        
+        function showCopySuccess(button, buttonText) {
+            // Add success class and change text
+            button.classList.add('copied');
+            buttonText.textContent = 'Copied!';
+            
+            // Reset after 2 seconds
+            setTimeout(() => {
+                button.classList.remove('copied');
+                buttonText.textContent = 'Copy';
+            }, 2000);
+        }
+        
+        function showCopyError(button, buttonText) {
+            // Show error state briefly
+            const originalText = buttonText.textContent;
+            buttonText.textContent = 'Error';
+            button.style.background = '#ef4444';
+            
+            // Reset after 2 seconds
+            setTimeout(() => {
+                buttonText.textContent = originalText;
+                button.style.background = '';
+            }, 2000);
+        }
+        
+        // Make copyEmail function globally available
+        window.copyEmail = copyEmail;
+    </script>
+</body>
+</html>

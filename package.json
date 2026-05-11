@@ -1,0 +1,36 @@
+{
+  "name": "personal-portfolio-dev",
+  "version": "1.0.0",
+  "description": "Development environment for personal portfolio website",
+  "scripts": {
+    "start": "python3 dev-server.py",
+    "start-simple": "python3 serve.py",
+    "start-node": "node serve.js",
+    "serve": "python3 -m http.server 8000",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:property": "jest --testPathPattern=property",
+    "test:unit": "jest --testPathPattern=unit",
+    "test:integration": "jest --testPathPattern=integration",
+    "test:accessibility": "jest --testPathPattern=accessibility",
+    "test:all": "npm run test && npm run test:accessibility",
+    "validate": "python3 validate-setup.py"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.8.2",
+    "@jest/globals": "^29.7.0",
+    "axe-core": "^4.8.2",
+    "fast-check": "^3.13.2",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "playwright": "^1.40.0"
+  },
+  "keywords": [
+    "portfolio",
+    "static-site",
+    "development"
+  ],
+  "author": "Portfolio Owner",
+  "license": "MIT"
+}

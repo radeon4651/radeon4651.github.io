@@ -1,0 +1,55 @@
+# Development files
+node_modules/
+.DS_Store
+.vscode/
+
+# Large video files (exceeding GitHub limits)
+projects/Paint\ Mixer\ and\ Maker/1.MOV
+projects/Sally\ from\ COD\ Zombies\ PAP\ Replica/2.MOV
+
+# Development and testing files
+debug-*.html
+dev-*.py
+dev-*.json
+dev-requirements.txt
+diagnostic.html
+minimal-test.html
+quick-test.html
+serve.js
+serve.py
+setup-dev.py
+simple-test.html
+status*.html
+test-*.html
+validate-*.html
+validate-*.py
+validate-*.js
+video-controls-verification.js
+test-runner.js
+jest.config.js
+tests/
+scripts/
+
+# Backup files
+index-backup.html
+index-simple.html
+
+# Documentation files (keep README.md but exclude others)
+DEV-QUICK-START.md
+DEVELOPMENT.md
+FEATURE_SUMMARY.md
+IMPLEMENTATION_NOTES.md
+IMPLEMENTATION_SUMMARY.md
+PROJECT-SETUP-GUIDE.md
+TRUNCATION_FIX_SUMMARY.md
+VIEWING-GUIDE.md
+
+# Kiro files
+.kiro/
+
+# Package files (keep package.json for GitHub Pages compatibility)
+package-lock.json
+
+# Project processing files
+project-importer.js
+scan-projects.py

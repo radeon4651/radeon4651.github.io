@@ -1,0 +1,747 @@
+{
+  "projects": [
+    {
+      "id": "Alternator from Apex Legends",
+      "title": "Alternator from Apex Legends",
+      "description": "Designed, modeled and printed a life-sized prop replica of the Alternator from Respawn Entertainment's Apex Legends, with all components carefully engineered and optimized for 3D print production.",
+      "technologies": [
+        "3D Printing",
+        "Design",
+        "Prop Making",
+        "Replica Design"
+      ],
+      "images": [
+        {
+          "url": "./projects/Alternator from Apex Legends/1.jpeg",
+          "alt": "Alternator from Apex Legends image 1",
+          "order": 1,
+          "type": "image"
+        },
+        {
+          "url": "./projects/Alternator from Apex Legends/2.png",
+          "alt": "Alternator from Apex Legends image 2",
+          "order": 2,
+          "type": "image"
+        }
+      ],
+      "liveDemo": "#project-alternator-from-apex-legends",
+      "sourceCode": "#project-alternator-from-apex-legends-files",
+      "isComplete": true
+    },
+    {
+      "id": "Armrest Latch Honda Civic 2010",
+      "title": "Armrest Latch Honda Civic 2010",
+      "description": "Reverse engineered and redesigned a center console latch for a 2010 Honda Civic accurately deconstructing the original component's geometry and mechanical behavior to produce a precise, fully functional replacement part from scratch.",
+      "technologies": [
+        "Design"
+      ],
+      "images": [
+        {
+          "url": "./projects/Armrest Latch Honda Civic 2010/1.png",
+          "alt": "Armrest Latch Honda Civic 2010 image 1",
+          "order": 1,
+          "type": "image"
+        },
+        {
+          "url": "./projects/Armrest Latch Honda Civic 2010/2.png",
+          "alt": "Armrest Latch Honda Civic 2010 image 2",
+          "order": 2,
+          "type": "image"
+        }
+      ],
+      "liveDemo": "#project-armrest-latch-honda-civic-2010",
+      "sourceCode": "#project-armrest-latch-honda-civic-2010-files",
+      "isComplete": true
+    },
+    {
+      "id": "Bowl Filler",
+      "title": "Bowl Filler",
+      "description": "Engineered a precision bowl filler solution from exact measurements, purpose-built to maximize filling accuracy while minimizing mess and cleanup transforming a tedious, imprecise process into a clean and efficient one.",
+      "technologies": [
+        "Engineering"
+      ],
+      "images": [
+        {
+          "url": "./projects/Bowl Filler/1.png",
+          "alt": "Bowl Filler image 1",
+          "order": 1,
+          "type": "image"
+        },
+        {
+          "url": "./projects/Bowl Filler/2.png",
+          "alt": "Bowl Filler image 2",
+          "order": 2,
+          "type": "image"
+        }
+      ],
+      "liveDemo": "#project-bowl-filler",
+      "sourceCode": "#project-bowl-filler-files",
+      "isComplete": true
+    },
+    {
+      "id": "CAD Designed and 3D Printed Guitar",
+      "title": "CAD Designed and 3D Printed Guitar",
+      "description": "Designed, engineered, and 3D printed a fully functional, to-scale guitar from the ground up spanning multi-part modeling, structural engineering, and final assembly. The project reached approximately 700,000 views on social media, demonstrating both technical execution and broad public appeal.",
+      "technologies": [
+        "3D Printing",
+        "CAD Design",
+        "Design",
+        "Engineering"
+      ],
+      "images": [
+        {
+          "url": "./projects/CAD Designed and 3D Printed Guitar/1.jpeg",
+          "alt": "CAD Designed and 3D Printed Guitar image 1",
+          "order": 1,
+          "type": "image"
+        },
+        {
+          "url": "./projects/CAD Designed and 3D Printed Guitar/2.png",
+          "alt": "CAD Designed and 3D Printed Guitar image 2",
+          "order": 2,
+          "type": "image"
+        }
+      ],
+      "liveDemo": "#project-cad-designed-and-3d-printed-guitar",
+      "sourceCode": "#project-cad-designed-and-3d-printed-guitar-files",
+      "isComplete": true
+    },
+    {
+      "id": "Clip Pilots Video Auto Clipper",
+      "title": "Clip Pilots Video Auto Clipper",
+      "description": "Engineered an automated video clipping system capable of processing large-scale content libraries, leveraging a proprietary AI model, designed and trained from the ground up to detect and extract clips optimized for viewer engagement.",
+      "technologies": [
+        "Design",
+        "Prop Making"
+      ],
+      "images": [
+        {
+          "url": "./projects/Clip Pilots Video Auto Clipper/1.png",
+          "alt": "Clip Pilots Video Auto Clipper image 1",
+          "order": 1,
+          "type": "image"
+        }
+      ],
+      "liveDemo": "#project-clip-pilots-video-auto-clipper",
+      "sourceCode": "#project-clip-pilots-video-auto-clipper-files",
+      "isComplete": true
+    },
+    {
+      "id": "Cup of Noodles Holder",
+      "title": "Cup of Noodles Holder",
+      "description": "Designed and 3D modeled a custom Cup Noodles holder that enables mug-style gripping for safer, more comfortable handling while the contents are hot.",
+      "technologies": [
+        "3D Modeling",
+        "Design"
+      ],
+      "images": [
+        {
+          "url": "./projects/Cup of Noodles Holder/1.webp",
+          "alt": "Cup of Noodles Holder image 1",
+          "order": 1,
+          "type": "image"
+        },
+        {
+          "url": "./projects/Cup of Noodles Holder/2.webp",
+          "alt": "Cup of Noodles Holder image 2",
+          "order": 2,
+          "type": "image"
+        }
+      ],
+      "liveDemo": "#project-cup-of-noodles-holder",
+      "sourceCode": "#project-cup-of-noodles-holder-files",
+      "isComplete": true
+    },
+    {
+      "id": "Faceplate for Security Camera for Electrical Box",
+      "title": "Faceplate for Security Camera for Electrical Box",
+      "description": "Designed and 3D printed a precisely modeled custom faceplate for a security camera installation, engineered to fit and mount cleanly onto an electrical box enclosure.",
+      "technologies": [
+        "3D Printing",
+        "Design"
+      ],
+      "images": [
+        {
+          "url": "./projects/Faceplate for Security Camera for Electrical Box/1.png",
+          "alt": "Faceplate for Security Camera for Electrical Box image 1",
+          "order": 1,
+          "type": "image"
+        },
+        {
+          "url": "./projects/Faceplate for Security Camera for Electrical Box/2.heic",
+          "alt": "Faceplate for Security Camera for Electrical Box image 2",
+          "order": 2,
+          "type": "image"
+        }
+      ],
+      "liveDemo": "#project-faceplate-for-security-camera-for-electrical-box",
+      "sourceCode": "#project-faceplate-for-security-camera-for-electrical-box-files",
+      "isComplete": true
+    },
+    {
+      "id": "Fallout 4 Pipe Pistol with Moving Parts",
+      "title": "Fallout 4 Pipe Pistol with Moving Parts",
+      "description": "Designed, modeled, and 3D printed a life-sized replica of the Pipe Pistol from Bethesda's Fallout 4, engineering a functional moving trigger mechanism into the build merging accurate prop recreation with tangible mechanical detail.",
+      "technologies": [
+        "3D Printing",
+        "Design",
+        "Engineering",
+        "Prop Making",
+        "Replica Design"
+      ],
+      "images": [
+        {
+          "url": "./projects/Fallout 4 Pipe Pistol with Moving Parts/1.png",
+          "alt": "Fallout 4 Pipe Pistol with Moving Parts image 1",
+          "order": 1,
+          "type": "image"
+        },
+        {
+          "url": "./projects/Fallout 4 Pipe Pistol with Moving Parts/2.png",
+          "alt": "Fallout 4 Pipe Pistol with Moving Parts image 2",
+          "order": 2,
+          "type": "image"
+        }
+      ],
+      "liveDemo": "#project-fallout-4-pipe-pistol-with-moving-parts",
+      "sourceCode": "#project-fallout-4-pipe-pistol-with-moving-parts-files",
+      "isComplete": true
+    },
+    {
+      "id": "Flatline from Apex Legends",
+      "title": "Flatline from Apex Legends",
+      "description": "Designed and modeled a life-sized prop replica of the Flatline from Respawn Entertainment's Apex Legends, with all components carefully engineered and optimized for 3D print production.",
+      "technologies": [
+        "3D Printing",
+        "Design",
+        "Prop Making",
+        "Replica Design"
+      ],
+      "images": [
+        {
+          "url": "./projects/Flatline from Apex Legends/1.png",
+          "alt": "Flatline from Apex Legends image 1",
+          "order": 1,
+          "type": "image"
+        }
+      ],
+      "liveDemo": "#project-flatline-from-apex-legends",
+      "sourceCode": "#project-flatline-from-apex-legends-files",
+      "isComplete": true
+    },
+    {
+      "id": "Glow Canister for Shortfilm ",
+      "title": "Glow Canister for Shortfilm ",
+      "description": "Engineered and delivered a commissioned prop for a short film production, building a complete lighting system featuring RGB LEDs, hidden on-prop controls, and a custom-developed Android application with full Bluetooth connectivity enabling remote adjustment of brightness, colors, and animations. Delivered a professional-grade, production-ready prop that merges clean aesthetics with sophisticated electronics and a purpose-built mobile interface.",
+      "technologies": [
+        "Electronics",
+        "Prop Making"
+      ],
+      "images": [
+        {
+          "url": "./projects/Glow Canister for Shortfilm /1.MOV",
+          "alt": "Glow Canister for Shortfilm  video 1",
+          "order": 1,
+          "type": "video"
+        },
+        {
+          "url": "./projects/Glow Canister for Shortfilm /2.png",
+          "alt": "Glow Canister for Shortfilm  image 2",
+          "order": 2,
+          "type": "image"
+        },
+        {
+          "url": "./projects/Glow Canister for Shortfilm /3.png",
+          "alt": "Glow Canister for Shortfilm  image 3",
+          "order": 3,
+          "type": "image"
+        }
+      ],
+      "liveDemo": "#project-glow-canister-for-shortfilm-",
+      "sourceCode": "#project-glow-canister-for-shortfilm--files",
+      "isComplete": true
+    },
+    {
+      "id": "Industrial Cup Holder Mount for Wall",
+      "title": "Industrial Cup Holder Mount for Wall",
+      "description": "Designed a robust, wall-mounted cup holder built to handle heavy-duty use, providing a secure and easily accessible storage solution for high-traffic environments.",
+      "technologies": [
+        "Design"
+      ],
+      "images": [
+        {
+          "url": "./projects/Industrial Cup Holder Mount for Wall/1.png",
+          "alt": "Industrial Cup Holder Mount for Wall image 1",
+          "order": 1,
+          "type": "image"
+        },
+        {
+          "url": "./projects/Industrial Cup Holder Mount for Wall/2.png",
+          "alt": "Industrial Cup Holder Mount for Wall image 2",
+          "order": 2,
+          "type": "image"
+        }
+      ],
+      "liveDemo": "#project-industrial-cup-holder-mount-for-wall",
+      "sourceCode": "#project-industrial-cup-holder-mount-for-wall-files",
+      "isComplete": true
+    },
+    {
+      "id": "Joint Filler and Packer",
+      "title": "Joint Filler and Packer",
+      "description": "Engineered a custom Joint Filler and Packer Tool from concept to final model, streamlining the filling process to maximize efficiency and ease of use.",
+      "technologies": [
+        "Engineering"
+      ],
+      "images": [
+        {
+          "url": "./projects/Joint Filler and Packer/1.png",
+          "alt": "Joint Filler and Packer image 1",
+          "order": 1,
+          "type": "image"
+        }
+      ],
+      "liveDemo": "#project-joint-filler-and-packer",
+      "sourceCode": "#project-joint-filler-and-packer-files",
+      "isComplete": true
+    },
+    {
+      "id": "Legendary Hornet from Borderlands 2",
+      "title": "Legendary Hornet from Borderlands 2",
+      "description": "Engineered, modeled, and 3D printed a life-sized replica of the legendary Hornet from the Borderlands series, incorporating a fully functional spring-powered, trigger-activated cocking mechanism with internal moving parts demonstrating a deep integration of mechanical engineering and prop design.",
+      "technologies": [
+        "3D Printing",
+        "Design",
+        "Engineering",
+        "Prop Making",
+        "Replica Design"
+      ],
+      "images": [
+        {
+          "url": "./projects/Legendary Hornet from Borderlands 2/1.mp4",
+          "alt": "Legendary Hornet from Borderlands 2 video 1",
+          "order": 1,
+          "type": "video"
+        },
+        {
+          "url": "./projects/Legendary Hornet from Borderlands 2/2.png",
+          "alt": "Legendary Hornet from Borderlands 2 image 2",
+          "order": 2,
+          "type": "image"
+        },
+        {
+          "url": "./projects/Legendary Hornet from Borderlands 2/3.png",
+          "alt": "Legendary Hornet from Borderlands 2 image 3",
+          "order": 3,
+          "type": "image"
+        }
+      ],
+      "liveDemo": "#project-legendary-hornet-from-borderlands-2",
+      "sourceCode": "#project-legendary-hornet-from-borderlands-2-files",
+      "isComplete": true
+    },
+    {
+      "id": "Lifesized Portal Gun Replica",
+      "title": "Lifesized Portal Gun Replica",
+      "description": "",
+      "technologies": [
+        "Replica Design"
+      ],
+      "images": [
+        {
+          "url": "./projects/Lifesized Portal Gun Replica/1.png",
+          "alt": "Lifesized Portal Gun Replica image 1",
+          "order": 1,
+          "type": "image"
+        }
+      ],
+      "liveDemo": "#project-lifesized-portal-gun-replica",
+      "sourceCode": "#project-lifesized-portal-gun-replica-files",
+      "isComplete": true
+    },
+    {
+      "id": "Lighter Clipper for BIC Lighters",
+      "title": "Lighter Clipper for BIC Lighters",
+      "description": "Engineered a precision-fit, multi-use attachment for BIC lighters, designed to exact tolerances for a secure fit while extending the lighter's functionality across packing and various practical applications.",
+      "technologies": [
+        "Design"
+      ],
+      "images": [
+        {
+          "url": "./projects/Lighter Clipper for BIC Lighters/1.png",
+          "alt": "Lighter Clipper for BIC Lighters image 1",
+          "order": 1,
+          "type": "image"
+        },
+        {
+          "url": "./projects/Lighter Clipper for BIC Lighters/2.png",
+          "alt": "Lighter Clipper for BIC Lighters image 2",
+          "order": 2,
+          "type": "image"
+        }
+      ],
+      "liveDemo": "#project-lighter-clipper-for-bic-lighters",
+      "sourceCode": "#project-lighter-clipper-for-bic-lighters-files",
+      "isComplete": true
+    },
+    {
+      "id": "Lilith the Portable AI Companion",
+      "title": "Lilith the Portable AI Companion",
+      "description": "Conceived and built a portable, handheld AI assistant entirely from scratch, encompassing hardware design, PCB soldering, firmware development, UI graphics, and backend server infrastructure. Powered by an ESP32 microcontroller with haptic feedback, scroll wheel navigation, local storage, and real-time voice transcription via custom-built servers.",
+      "technologies": [
+        "Design",
+        "ESP32",
+        "Firmware",
+        "Hardware Design",
+        "Microcontroller",
+        "PCB Design"
+      ],
+      "images": [
+        {
+          "url": "./projects/Lilith the Portable AI Companion/1.mp4",
+          "alt": "Lilith the Portable AI Companion video 1",
+          "order": 1,
+          "type": "video"
+        }
+      ],
+      "liveDemo": "#project-lilith-the-portable-ai-companion",
+      "sourceCode": "#project-lilith-the-portable-ai-companion-files",
+      "isComplete": true
+    },
+    {
+      "id": "Mars Attacks Laser Blaster Prop Replica",
+      "title": "Mars Attacks Laser Blaster Prop Replica",
+      "description": "Produced a life-sized prop replica of the iconic Martian Laser Rifle from Mars Attacks!, carefully modeled and 3D printed with close attention to the weapon's distinctive retro-sci-fi aesthetic and proportional accuracy.",
+      "technologies": [
+        "3D Printing",
+        "Laser Cutting",
+        "Prop Making",
+        "Replica Design"
+      ],
+      "images": [
+        {
+          "url": "./projects/Mars Attacks Laser Blaster Prop Replica/1.png",
+          "alt": "Mars Attacks Laser Blaster Prop Replica image 1",
+          "order": 1,
+          "type": "image"
+        },
+        {
+          "url": "./projects/Mars Attacks Laser Blaster Prop Replica/2.webp",
+          "alt": "Mars Attacks Laser Blaster Prop Replica image 2",
+          "order": 2,
+          "type": "image"
+        },
+        {
+          "url": "./projects/Mars Attacks Laser Blaster Prop Replica/3.webp",
+          "alt": "Mars Attacks Laser Blaster Prop Replica image 3",
+          "order": 3,
+          "type": "image"
+        }
+      ],
+      "liveDemo": "#project-mars-attacks-laser-blaster-prop-replica",
+      "sourceCode": "#project-mars-attacks-laser-blaster-prop-replica-files",
+      "isComplete": true
+    },
+    {
+      "id": "Paint Mixer and Maker",
+      "title": "Paint Mixer and Maker",
+      "description": "Designed, engineered, and programmed a fully automated paint mixing system capable of matching any RGB or CMYK color input with precision. The machine autonomously meters and combines dry pigments to achieve the target color, then dispenses a liquid binder via an integrated pump delivering a ready-to-use paint from raw materials with minimal user input. A complete end-to-end system spanning mechanical design, electronics, and software. Patent Pending",
+      "technologies": [
+        "Design",
+        "Electronics"
+      ],
+      "images": [
+        {
+          "url": "./projects/Paint Mixer and Maker/1.png",
+          "alt": "Paint Mixer and Maker image 1",
+          "order": 1,
+          "type": "image"
+        },
+        {
+          "url": "./projects/Paint Mixer and Maker/2.MOV",
+          "alt": "Paint Mixer and Maker video 2",
+          "order": 2,
+          "type": "video"
+        }
+      ],
+      "liveDemo": "#project-paint-mixer-and-maker",
+      "sourceCode": "#project-paint-mixer-and-maker-files",
+      "isComplete": true
+    },
+    {
+      "id": "Plastic Wrap Crate Opener Tool",
+      "title": "Plastic Wrap Crate Opener Tool",
+      "description": "Designed and engineered a portable, keychain-integrated plastic cover slicer built to safely cut through heavy-duty crate wrapping reducing product access time while prioritizing user safety and everyday portability. A focused, practical solution that distills a workplace pain point into a minimal, carry-anywhere tool.",
+      "technologies": [
+        "Design"
+      ],
+      "images": [
+        {
+          "url": "./projects/Plastic Wrap Crate Opener Tool/1.png",
+          "alt": "Plastic Wrap Crate Opener Tool image 1",
+          "order": 1,
+          "type": "image"
+        },
+        {
+          "url": "./projects/Plastic Wrap Crate Opener Tool/2.png",
+          "alt": "Plastic Wrap Crate Opener Tool image 2",
+          "order": 2,
+          "type": "image"
+        },
+        {
+          "url": "./projects/Plastic Wrap Crate Opener Tool/3.png",
+          "alt": "Plastic Wrap Crate Opener Tool image 3",
+          "order": 3,
+          "type": "image"
+        }
+      ],
+      "liveDemo": "#project-plastic-wrap-crate-opener-tool",
+      "sourceCode": "#project-plastic-wrap-crate-opener-tool-files",
+      "isComplete": true
+    },
+    {
+      "id": "R301 Carbine from Apex Legends",
+      "title": "R301 Carbine from Apex Legends",
+      "description": "Designed and modeled a life-sized prop replica of the R-301 Carbine from Respawn Entertainment's Apex Legends, with all components carefully engineered and optimized for 3D print production.",
+      "technologies": [
+        "3D Printing",
+        "Design",
+        "Prop Making",
+        "Replica Design"
+      ],
+      "images": [
+        {
+          "url": "./projects/R301 Carbine from Apex Legends/1.png",
+          "alt": "R301 Carbine from Apex Legends image 1",
+          "order": 1,
+          "type": "image"
+        }
+      ],
+      "liveDemo": "#project-r301-carbine-from-apex-legends",
+      "sourceCode": "#project-r301-carbine-from-apex-legends-files",
+      "isComplete": true
+    },
+    {
+      "id": "R99 from Apex Legends",
+      "title": "R99 from Apex Legends",
+      "description": "Designed, modeled and printed a life-sized prop replica of the R-99 Carbine from Respawn Entertainment's Apex Legends, with all components carefully engineered and optimized for 3D print production.",
+      "technologies": [
+        "3D Printing",
+        "Design",
+        "Prop Making",
+        "Replica Design"
+      ],
+      "images": [
+        {
+          "url": "./projects/R99 from Apex Legends/1.jpeg",
+          "alt": "R99 from Apex Legends image 1",
+          "order": 1,
+          "type": "image"
+        },
+        {
+          "url": "./projects/R99 from Apex Legends/2.png",
+          "alt": "R99 from Apex Legends image 2",
+          "order": 2,
+          "type": "image"
+        }
+      ],
+      "liveDemo": "#project-r99-from-apex-legends",
+      "sourceCode": "#project-r99-from-apex-legends-files",
+      "isComplete": true
+    },
+    {
+      "id": "RE45 from Apex Legends",
+      "title": "RE45 from Apex Legends",
+      "description": "Engineered a life-sized, multi-component prop replica of the RE-45 pistol from Respawn Entertainment's Apex Legends, with deliberate attention to scale accuracy and functional detail including a fully detachable magazine system secured through embedded magnet connections.",
+      "technologies": [
+        "Prop Making",
+        "Replica Design"
+      ],
+      "images": [
+        {
+          "url": "./projects/RE45 from Apex Legends/1.png",
+          "alt": "RE45 from Apex Legends image 1",
+          "order": 1,
+          "type": "image"
+        }
+      ],
+      "liveDemo": "#project-re45-from-apex-legends",
+      "sourceCode": "#project-re45-from-apex-legends-files",
+      "isComplete": true
+    },
+    {
+      "id": "Rollo Roller",
+      "title": "Rollo Roller",
+      "description": "",
+      "technologies": [
+        "Engineering"
+      ],
+      "images": [
+        {
+          "url": "./projects/Rollo Roller/1.png",
+          "alt": "Rollo Roller image 1",
+          "order": 1,
+          "type": "image"
+        }
+      ],
+      "liveDemo": "#project-rollo-roller",
+      "sourceCode": "#project-rollo-roller-files",
+      "isComplete": true
+    },
+    {
+      "id": "Sally from COD Zombies PAP Replica",
+      "title": "Sally from COD Zombies PAP Replica",
+      "description": "Designed, modeled, and 3D printed a fully interactive life-sized prop replica of the Pack-a-Punched Sally from Call of Duty Zombies, engineering a complete electronics suite from the ground up encompassing a battery-powered microcontroller, RGB color-changing LEDs, trigger-activated button mechanics, integrated speakers, and hidden easter eggs. Developed a companion Wi-Fi application enabling users to upload custom sounds and define their own easter egg interactions, elevating the prop from a static replica into a fully programmable, user-customizable interactive experience.",
+      "technologies": [
+        "3D Printing",
+        "Design",
+        "Electronics",
+        "Engineering",
+        "Microcontroller",
+        "Prop Making",
+        "Replica Design"
+      ],
+      "images": [
+        {
+          "url": "./projects/Sally from COD Zombies PAP Replica/1.mp4",
+          "alt": "Sally from COD Zombies PAP Replica video 1",
+          "order": 1,
+          "type": "video"
+        },
+        {
+          "url": "./projects/Sally from COD Zombies PAP Replica/3.JPG",
+          "alt": "Sally from COD Zombies PAP Replica image 2",
+          "order": 2,
+          "type": "image"
+        },
+        {
+          "url": "./projects/Sally from COD Zombies PAP Replica/4.png",
+          "alt": "Sally from COD Zombies PAP Replica image 3",
+          "order": 3,
+          "type": "image"
+        },
+        {
+          "url": "./projects/Sally from COD Zombies PAP Replica/5.png",
+          "alt": "Sally from COD Zombies PAP Replica image 4",
+          "order": 4,
+          "type": "image"
+        }
+      ],
+      "liveDemo": "#project-sally-from-cod-zombies-pap-replica",
+      "sourceCode": "#project-sally-from-cod-zombies-pap-replica-files",
+      "isComplete": true
+    },
+    {
+      "id": "Spool Holder",
+      "title": "Spool Holder",
+      "description": "Designed and 3D printed custom spool feet enabling filament spools to stand upright for compact, organized storage.",
+      "technologies": [
+        "3D Printing",
+        "Design"
+      ],
+      "images": [
+        {
+          "url": "./projects/Spool Holder/1.png",
+          "alt": "Spool Holder image 1",
+          "order": 1,
+          "type": "image"
+        },
+        {
+          "url": "./projects/Spool Holder/2.png",
+          "alt": "Spool Holder image 2",
+          "order": 2,
+          "type": "image"
+        },
+        {
+          "url": "./projects/Spool Holder/3.webp",
+          "alt": "Spool Holder image 3",
+          "order": 3,
+          "type": "image"
+        }
+      ],
+      "liveDemo": "#project-spool-holder",
+      "sourceCode": "#project-spool-holder-files",
+      "isComplete": true
+    },
+    {
+      "id": "Unkempt Harold Borderlands 3",
+      "title": "Unkempt Harold Borderlands 3",
+      "description": "Designed, modeled, and 3D printed a life-sized replica of the iconic Unkempt Harold from Borderlands, engineering functional trigger-action hammer mechanics into the build",
+      "technologies": [
+        "3D Printing",
+        "Design",
+        "Engineering",
+        "Replica Design"
+      ],
+      "images": [
+        {
+          "url": "./projects/Unkempt Harold Borderlands 3/1.png",
+          "alt": "Unkempt Harold Borderlands 3 image 1",
+          "order": 1,
+          "type": "image"
+        },
+        {
+          "url": "./projects/Unkempt Harold Borderlands 3/2.mp4",
+          "alt": "Unkempt Harold Borderlands 3 video 2",
+          "order": 2,
+          "type": "video"
+        },
+        {
+          "url": "./projects/Unkempt Harold Borderlands 3/3.png",
+          "alt": "Unkempt Harold Borderlands 3 image 3",
+          "order": 3,
+          "type": "image"
+        }
+      ],
+      "liveDemo": "#project-unkempt-harold-borderlands-3",
+      "sourceCode": "#project-unkempt-harold-borderlands-3-files",
+      "isComplete": true
+    },
+    {
+      "id": "Vape Bottle Holder for Keychain",
+      "title": "Vape Bottle Holder for Keychain",
+      "description": "",
+      "technologies": [
+        "Engineering"
+      ],
+      "images": [
+        {
+          "url": "./projects/Vape Bottle Holder for Keychain/1.png",
+          "alt": "Vape Bottle Holder for Keychain image 1",
+          "order": 1,
+          "type": "image"
+        },
+        {
+          "url": "./projects/Vape Bottle Holder for Keychain/2.png",
+          "alt": "Vape Bottle Holder for Keychain image 2",
+          "order": 2,
+          "type": "image"
+        }
+      ],
+      "liveDemo": "#project-vape-bottle-holder-for-keychain",
+      "sourceCode": "#project-vape-bottle-holder-for-keychain-files",
+      "isComplete": true
+    },
+    {
+      "id": "XROS Charging Dock with Bottle Holder",
+      "title": "XROS Charging Dock with Bottle Holder",
+      "description": "",
+      "technologies": [
+        "Engineering"
+      ],
+      "images": [
+        {
+          "url": "./projects/XROS Charging Dock with Bottle Holder/1.png",
+          "alt": "XROS Charging Dock with Bottle Holder image 1",
+          "order": 1,
+          "type": "image"
+        }
+      ],
+      "liveDemo": "#project-xros-charging-dock-with-bottle-holder",
+      "sourceCode": "#project-xros-charging-dock-with-bottle-holder-files",
+      "isComplete": true
+    }
+  ],
+  "generated_at": "/Users/b/PortfolioData/radeon4651.github.io",
+  "total_projects": 28
+}

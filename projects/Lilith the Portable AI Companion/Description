@@ -1,0 +1,1 @@
+Conceived and built a portable, handheld AI assistant entirely from scratch, encompassing hardware design, PCB soldering, firmware development, UI graphics, and backend server infrastructure. Powered by an ESP32 microcontroller with haptic feedback, scroll wheel navigation, local storage, and real-time voice transcription via custom-built servers.
