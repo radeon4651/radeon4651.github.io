@@ -247,7 +247,7 @@
       ],
       "images": [
         {
-          "url": "./projects/Glow Canister for Shortfilm /1.MOV",
+          "url": "./projects/Glow Canister for Shortfilm /1.mov",
           "alt": "Glow Canister for Shortfilm  video 1",
           "order": 1,
           "type": "video"
@@ -470,15 +470,9 @@
           "type": "image"
         },
         {
-          "url": "./projects/Paint Mixer and Maker/1.MOV",
-          "alt": "Paint Mixer and Maker video 1",
-          "order": 2,
-          "type": "video"
-        },
-        {
-          "url": "./projects/Paint Mixer and Maker/2.MOV",
+          "url": "./projects/Paint Mixer and Maker/2.mov",
           "alt": "Paint Mixer and Maker video 2",
-          "order": 3,
+          "order": 2,
           "type": "video"
         }
       ],
@@ -516,6 +510,56 @@
       ],
       "liveDemo": "#project-plastic-wrap-crate-opener-tool",
       "sourceCode": "#project-plastic-wrap-crate-opener-tool-files",
+      "isComplete": true
+    },
+    {
+      "id": "Prop Replica 'Sally' from COD Zombies",
+      "title": "Prop Replica 'Sally' from COD Zombies",
+      "description": "Designed, modeled, and 3D printed a fully interactive life-sized prop replica of the Pack-a-Punched Sally from Call of Duty Zombies, engineering a complete electronics suite from the ground up encompassing a battery-powered microcontroller, RGB color-changing LEDs, trigger-activated button mechan...",
+      "technologies": [
+        "3D Modeling",
+        "3D Printing",
+        "Engineering",
+        "Game Props",
+        "Microcontroller",
+        "Product Design",
+        "Prop Making",
+        "Replica Design"
+      ],
+      "images": [
+        {
+          "url": "./projects/Prop Replica 'Sally' from COD Zombies/1.mp4",
+          "alt": "Prop Replica 'Sally' from COD Zombies video 1",
+          "order": 1,
+          "type": "video"
+        },
+        {
+          "url": "./projects/Prop Replica 'Sally' from COD Zombies/2.mov",
+          "alt": "Prop Replica 'Sally' from COD Zombies video 2",
+          "order": 2,
+          "type": "video"
+        },
+        {
+          "url": "./projects/Prop Replica 'Sally' from COD Zombies/3.jpg",
+          "alt": "Prop Replica 'Sally' from COD Zombies image 3",
+          "order": 3,
+          "type": "image"
+        },
+        {
+          "url": "./projects/Prop Replica 'Sally' from COD Zombies/4.png",
+          "alt": "Prop Replica 'Sally' from COD Zombies image 4",
+          "order": 4,
+          "type": "image"
+        },
+        {
+          "url": "./projects/Prop Replica 'Sally' from COD Zombies/5.png",
+          "alt": "Prop Replica 'Sally' from COD Zombies image 5",
+          "order": 5,
+          "type": "image"
+        }
+      ],
+      "liveDemo": "#project-prop-replica-'sally'-from-cod-zombies",
+      "sourceCode": "#project-prop-replica-'sally'-from-cod-zombies-files",
       "isComplete": true
     },
     {
@@ -615,56 +659,6 @@
       ],
       "liveDemo": "#project-rollo-roller",
       "sourceCode": "#project-rollo-roller-files",
-      "isComplete": true
-    },
-    {
-      "id": "Sally from COD Zombies PAP Replica",
-      "title": "Sally from COD Zombies PAP Replica",
-      "description": "Designed, modeled, and 3D printed a fully interactive life-sized prop replica of the Pack-a-Punched Sally from Call of Duty Zombies, engineering a complete electronics suite from the ground up encompassing a battery-powered microcontroller, RGB color-changing LEDs, trigger-activated button mechan...",
-      "technologies": [
-        "3D Modeling",
-        "3D Printing",
-        "Engineering",
-        "Game Props",
-        "Microcontroller",
-        "Product Design",
-        "Prop Making",
-        "Replica Design"
-      ],
-      "images": [
-        {
-          "url": "./projects/Sally from COD Zombies PAP Replica/1.mp4",
-          "alt": "Sally from COD Zombies PAP Replica video 1",
-          "order": 1,
-          "type": "video"
-        },
-        {
-          "url": "./projects/Sally from COD Zombies PAP Replica/2.MOV",
-          "alt": "Sally from COD Zombies PAP Replica video 2",
-          "order": 2,
-          "type": "video"
-        },
-        {
-          "url": "./projects/Sally from COD Zombies PAP Replica/3.jpg",
-          "alt": "Sally from COD Zombies PAP Replica image 3",
-          "order": 3,
-          "type": "image"
-        },
-        {
-          "url": "./projects/Sally from COD Zombies PAP Replica/4.png",
-          "alt": "Sally from COD Zombies PAP Replica image 4",
-          "order": 4,
-          "type": "image"
-        },
-        {
-          "url": "./projects/Sally from COD Zombies PAP Replica/5.png",
-          "alt": "Sally from COD Zombies PAP Replica image 5",
-          "order": 5,
-          "type": "image"
-        }
-      ],
-      "liveDemo": "#project-sally-from-cod-zombies-pap-replica",
-      "sourceCode": "#project-sally-from-cod-zombies-pap-replica-files",
       "isComplete": true
     },
     {

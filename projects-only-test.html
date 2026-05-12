@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Only Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .projects-grid {
+            display: grid;
+            gap: 24px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            margin-top: 32px;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 24px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e2e8f0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .project-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #0f172a;
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+        .project-description {
+            color: #334155;
+            line-height: 1.5;
+            margin-bottom: 16px;
+            flex: 1;
+        }
+        .project-tech-tag {
+            background-color: rgba(37, 99, 235, 0.1);
+            color: #2563eb;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            border: 1px solid rgba(37, 99, 235, 0.2);
+            margin: 2px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧪 Projects Only Test</h1>
+    <div id="status">Loading projects...</div>
+    <div id="projects-grid" class="projects-grid"></div>
+
+    <script>
+        console.log('🚀 Starting projects-only test...');
+        
+        async function loadProjects() {
+            const status = document.getElementById('status');
+            const grid = document.getElementById('projects-grid');
+            
+            try {
+                console.log('📄 Fetching projects.json...');
+                status.textContent = 'Fetching projects...';
+                
+                const response = await fetch('./projects.json?v=' + Date.now());
+                console.log('📄 Response:', response.status, response.statusText);
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                
+                const data = await response.json();
+                console.log(`✅ Loaded ${data.projects.length} projects`);
+                status.textContent = `✅ Loaded ${data.projects.length} projects`;
+                
+                // Clear grid
+                grid.innerHTML = '';
+                
+                // Render projects
+                data.projects.forEach((project, index) => {
+                    console.log(`🔨 Rendering project ${index + 1}: ${project.title}`);
+                    
+                    const card = document.createElement('article');
+                    card.className = 'card';
+                    
+                    card.innerHTML = `
+                        <h3 class="project-title">${project.title}</h3>
+                        <p class="project-description">${project.description}</p>
+                        <div style="margin-bottom: 16px;">
+                            <div style="font-size: 0.875rem; font-weight: 600; color: #64748b; margin-bottom: 8px;">
+                                Technologies
+                            </div>
+                            <div>
+                                ${project.technologies.map(tech => 
+                                    `<span class="project-tech-tag">${tech}</span>`
+                                ).join('')}
+                            </div>
+                        </div>
+                        <div style="color: #64748b; font-size: 0.875rem;">
+                            ${project.images.length} media file(s)
+                        </div>
+                    `;
+                    
+                    grid.appendChild(card);
+                });
+                
+                console.log(`🎨 Successfully rendered ${data.projects.length} projects`);
+                status.textContent = `✅ Successfully rendered ${data.projects.length} projects`;
+                
+            } catch (error) {
+                console.error('❌ Error:', error);
+                status.textContent = `❌ Error: ${error.message}`;
+                status.style.color = 'red';
+            }
+        }
+        
+        // Load projects when page is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', loadProjects);
+        } else {
+            loadProjects();
+        }
+    </script>
+</body>
+</html>
