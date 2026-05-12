@@ -470,9 +470,15 @@
           "type": "image"
         },
         {
-          "url": "./projects/Paint Mixer and Maker/2.mov",
-          "alt": "Paint Mixer and Maker video 2",
+          "url": "./projects/Paint Mixer and Maker/1.MOV",
+          "alt": "Paint Mixer and Maker video 1",
           "order": 2,
+          "type": "video"
+        },
+        {
+          "url": "./projects/Paint Mixer and Maker/2.MOV",
+          "alt": "Paint Mixer and Maker video 2",
+          "order": 3,
           "type": "video"
         }
       ],
@@ -633,7 +639,7 @@
           "type": "video"
         },
         {
-          "url": "./projects/Sally from COD Zombies PAP Replica/2.mov",
+          "url": "./projects/Sally from COD Zombies PAP Replica/2.MOV",
           "alt": "Sally from COD Zombies PAP Replica video 2",
           "order": 2,
           "type": "video"
