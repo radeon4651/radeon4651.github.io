@@ -247,7 +247,7 @@
       ],
       "images": [
         {
-          "url": "./projects/Glow Canister for Shortfilm /1.mov",
+          "url": "./projects/Glow Canister for Shortfilm /1.MOV",
           "alt": "Glow Canister for Shortfilm  video 1",
           "order": 1,
           "type": "video"
@@ -470,7 +470,7 @@
           "type": "image"
         },
         {
-          "url": "./projects/Paint Mixer and Maker/2.mov",
+          "url": "./projects/Paint Mixer and Maker/2.MOV",
           "alt": "Paint Mixer and Maker video 2",
           "order": 2,
           "type": "video"
@@ -534,7 +534,7 @@
           "type": "video"
         },
         {
-          "url": "./projects/Prop Replica 'Sally' from COD Zombies/2.mov",
+          "url": "./projects/Prop Replica 'Sally' from COD Zombies/2.MOV",
           "alt": "Prop Replica 'Sally' from COD Zombies video 2",
           "order": 2,
           "type": "video"
